@@ -172,3 +172,4 @@ jobs:
           gh release create "$TAGNAME" --draft -t "$NAME" --target "master" $(for a in artifacts/*.{zip,tar.xz}; do echo $a; done)
         env:
           GITHUB_TOKEN: ${{ github.token }}
+
